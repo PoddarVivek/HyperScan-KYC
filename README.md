@@ -24,11 +24,16 @@ KYC fails for avoidable reasons: poor lighting, glare, a misaligned ID, a weak c
 
 ## Success metrics defined in the PRD
 
-- KYC completion time: the PRD targets a fall from about 6 minutes to under 2. Both figures are planning assumptions, not measurements from a live product.
-- Drop-off per screen, tracked as a funnel.
-- Retry rate on ID capture.
+| Metric | Target in the PRD |
+|---|---|
+| KYC completion time | About 6 minutes down to under 2 |
+| ID approval rate | +40% |
+| Drop-off at ID capture / selfie capture | -30% / -25% |
+| OCR accuracy | +35% |
+| Manual reviews | -30% |
+| Overall funnel conversion | +20 to 25% |
 
-This is a design exercise, so none of these have been measured. The [experiment approach I use for Park+](https://poddarvivek.github.io/parkplus/) shows how I would test a change like this.
+These are planning targets I set for the design, not measurements from a live product. The PRD also specifies the funnel analytics needed to check them: drop-off per screen, retry counts, OCR accuracy, liveness failure rate and median completion time. The [experiment approach I use for Park+](https://poddarvivek.github.io/parkplus/) shows how I would test a change like this.
 
 ## Contents
 
