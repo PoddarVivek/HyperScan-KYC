@@ -1,120 +1,45 @@
-# 🛡️ HyperScan KYC — Intelligent Identity Verification Flow  
-A complete KYC (Know Your Customer) verification system designed in Figma, featuring real-time ID feedback, enhanced image processing logic, and a seamless multi-step user journey.
+# HyperScan KYC: a digital identity verification flow
 
----
+A mobile KYC flow designed in Figma, with a PRD and a product case study. It gives users real-time feedback on their ID photo so they fix problems before submitting, instead of finding out after a rejection.
 
-## 🎥 Preview (GIF)
-> *(GIF will appear here once added)*  
-![HyperScan Preview](documents/hyperscan-preview.gif)
+![ID capture with quality feedback](screens/Quality%20Feedback.png)
 
----
+**Interactive prototype:** [Open in Figma](https://www.figma.com/proto/7KticwQEJzCErcR651ctK9/HyperScan-KYC?node-id=1-2&p=f&t=WcS7W942H7PyhpBc-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
 
-## 📌 Overview  
-HyperScan KYC is a user-friendly identity verification experience designed to reduce KYC completion time from **6 minutes to under 2 minutes**.
+## The problem
 
-The solution includes:  
-- Real-time feedback on image clarity  
-- Auto-enhanced ID capture  
-- Optimized OCR + face match logic  
-- Full end-to-end KYC product flow  
-- Designed for mobile-first onboarding  
+KYC fails for avoidable reasons: poor lighting, glare, a misaligned ID, a weak camera, unclear instructions. Each failure means a retry, a longer session and a higher chance the user gives up.
 
----
+## The design
 
-## 🧩 Problem Statement  
-Users often struggle with KYC flows due to:  
-✔ Poor lighting  
-✔ Glare  
-✔ Misalignment  
-✔ Low device camera quality  
-✔ Confusing instructions  
+| Step | Screen | What it does |
+|---|---|---|
+| 1 | Welcome | Sets expectations before asking for anything |
+| 2 | ID instructions | Lighting, glare, steadiness and framing tips |
+| 3 | ID capture | Live guidance on alignment and brightness |
+| 4 | Quality feedback | Plain-language prompts such as "Remove glare" or "Hold steady" |
+| 5 | Auto-crop preview | Shows the processed image for confirmation |
+| 6 | Selfie instructions and capture | Sets up the face match |
+| 7 | Success | Confirms completion and next steps |
 
-This leads to **KYC failure**, **drop-offs**, and **bad user experience**.
+## Success metrics defined in the PRD
 
-HyperScan KYC solves this by giving **instant actionable feedback**.
+- KYC completion time: the PRD targets a fall from about 6 minutes to under 2. Both figures are planning assumptions, not measurements from a live product.
+- Drop-off per screen, tracked as a funnel.
+- Retry rate on ID capture.
 
----
+This is a design exercise, so none of these have been measured. The [experiment approach I use for Park+](https://poddarvivek.github.io/parkplus/) shows how I would test a change like this.
 
-## 🚀 Key Features  
-### **1. User-Friendly Welcome Flow**  
-Clear messaging, no friction, and transparent expectations.
+## Contents
 
-### **2. ID Instructions (Smart Tips)**  
-Shows:  
-- Proper lighting  
-- Avoid glare  
-- Hold steady  
-- Keep ID inside frame  
+- `screens/`: all eight screens as exported from Figma
+- `documents/PRD.pdf`: the product requirements document
+- `documents/HyperScan KYC – Intelligent Digital Verification Flow (Product Case Study).pdf`: the case study
 
-### **3. ID Capture with Intelligent Preview**  
-- Real-time glare detection  
-- Brightness suggestions  
-- Auto-alignment guidance  
+## Tools
 
-### **4. Quality Feedback (Auto Suggestions)**  
-The system tells the user:  
-- “Remove glare”  
-- “Increase brightness”  
-- “Hold steady”  
-- “Align your ID”  
+Figma, Notion, funnel analysis.
 
-### **5. Auto-Crop Preview**  
-Shows the processed output for user confirmation.
+## Author
 
-### **6. Selfie Instructions + Capture**  
-Face match setup with clear guidance for best results.
-
-### **7. Final Confirmation Screen**  
-Success message with next steps.
-
----
-
-## 🖼️ Screens (Full Flow)
-
-All screens are available inside `/screens` folder:
-
-- `Welcome.png`  
-- `ID Instructions.png`  
-- `ID Capture.png`  
-- `Quality Feedback.png`  
-- `Auto-Crop Preview.png`  
-- `S8 — Selfie Instructions.png`  
-- `S9 — Selfie Capture.png`  
-- `S11 — Success.png`  
-
----
-
-## 📄 Documents  
-All PRD + Case Study docs available in `/documents` folder.
-
-- **HyperScan KYC – PRD.pdf**  
-- **HyperScan KYC – Case Study.pdf**
-
----
-
-## 🛠 Tools Used  
-- Figma  
-- Notion  
-- UX Flow Design  
-- Product Thinking  
-- OCR Concepts  
-- Analytics Funnels  
-
----
-
-## 🔗 Prototype Link  
-👉 **Interactive Prototype:**  
-[https://www.figma.com/proto/7KticwQEJzCErcR651ctK9/HyperScan-KYC?node-id=0-1&t=iCfK8nd9cJbo7rPK-1
-](https://www.figma.com/proto/7KticwQEJzCErcR651ctK9/HyperScan-KYC?node-id=1-2&p=f&t=WcS7W942H7PyhpBc-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
----
-
-## 🧑‍💻 About the Creator  
-**Vivek Poddar**  
-Product Analyst | Data Analyst | Product Enthusiast  
-NIT Kurukshetra  
-
----
-
-## ⭐ Want to Support?  
-If you liked this project, please consider starring ⭐ the repo!
-
+Vivek Poddar, B.Tech ECE, NIT Kurukshetra. [Portfolio](https://poddarvivek.github.io/) / [LinkedIn](https://www.linkedin.com/in/vivekpoddar-work)
